@@ -39,6 +39,18 @@ main {
   align-items: center;
   align-content: center;
   /* if flex-wrap: wrap; then align-content: center helps to center all elements in the flex container  */
+
+  gap: 10px;
+  /* adds a gap of 10px between the flex items
+  
+  gap: 10px 20px;
+  means -->
+  
+  row-gap: 10px; --> add a gap of 10px betwen rows.
+
+  column-gap: 20px; --> add a gap of 20px between columns.
+  
+  */
 }
 
 .flex .item {
@@ -46,14 +58,19 @@ main {
   height: 100px;
   background-color: red;
   flex: 2 4 50px;
-
   /* 
   flex: 2 4 50px;
   means -->
 
-  flex-grow: 2;
-  flex-shrink: 4;
-  flex-basis: 50px;
+  flex-grow: 2; -> grow by 2 with respect to flex-basis.
 
+  flex-shrink: 4; -> shrink by 4 with respect to flex-basis.
+
+  flex-basis: 50px; -> set the basis to 50px
+  */
+
+  align-self: flex-start;
+  /*
+  aligns the flex item at the start of the flex container
   */
 }
