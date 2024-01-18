@@ -1,0 +1,33 @@
+/* 
+    Importing fonts from "https://fonts.google.com/specimen/Roboto"
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/*
+    Defining SCSS Variables
+*/
+
+$yellow: rgb(221, 189, 28);
+$red: rgb(171, 15, 15);
+$dark: rgb(5, 5, 5);
+$light: rgb(248, 244, 244);
+$roboto: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+/*
+    Using SCSS Variables
+*/
+
+body {
+  background-color: $light;
+  color: $dark;
+  font-family: $roboto;
+
+  main {
+    background-color: $yellow;
+
+    a {
+      color: $red;
+    }
+  }
+}
