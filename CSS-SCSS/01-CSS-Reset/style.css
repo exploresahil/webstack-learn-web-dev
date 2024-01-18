@@ -1,0 +1,81 @@
+/* ##################################################### */
+/* CSS Reset is used to reset all the default styles. */
+/* ##################################################### */
+
+*,
+*::before,
+*::after {
+  /* The * selector selects all elements. */
+  /* The ::before and ::after pseudo-elements allow you to define content before and after an element. */
+
+  margin: 0;
+  /*
+  This sets the margin to 0.
+  Adds space outside of current element.
+  margin: 10px; --> adds 10px margine on all side.
+  margin: 10px 20px; --> first value -> top and bottom adds 10px, second value -> left and right adds 20px.
+  margin: 10px 20px 30px 40px; --> top -> 10px, right -> 20px, bottom -> 30px, left -> 40px.
+  */
+  padding: 0;
+  /*
+  This sets the padding to 0.
+  Adds space inside of current element.
+  padding: 10px; --> adds 10px padding on all side.
+  padding: 10px 20px; --> first value -> top and bottom adds 10px, second value -> left and right adds 20px.
+  padding: 10px 20px 30px 40px; --> top -> 10px, right -> 20px, bottom -> 30px, left -> 40px.
+  */
+
+  box-sizing: border-box;
+  /* This is used to include the padding and border in an element's total width and height. */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* The font-family property sets the font family for an element. */
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  /* This will make sure that the image, video, and picture elements are displayed as blocks. */
+  max-width: 100%;
+  /* This sets the maximum width of an element to 100%. */
+}
+
+img {
+  height: auto;
+  /* This sets the height of an image to the height of the element. */
+  vertical-align: middle;
+  /* This sets the vertical alignment of an image to the middle. */
+  font-style: italic;
+  /* This sets the font style of an image to italic. */
+  background-repeat: no-repeat;
+  /* This sets the background repeat of an image to no-repeat. */
+  background-size: cover;
+  /* This sets the background size of an image to cover. */
+  shape-margin: 1rem;
+  /* This sets the shape margin of an image to 1rem. */
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  /* This sets the font of an element to the font of its parent. */
+}
+
+ol,
+ul {
+  list-style: none;
+  /* This sets the list style of an element to none. */
+}
+
+a {
+  color: inherit;
+  /* This sets the color of an element to the color of its parent. */
+  text-decoration: none;
+  /* This sets the text decoration of an element to none. */
+}

@@ -1,0 +1,74 @@
+<!-- HTML  -->
+<!-- Used as the Graphical user interface in client-side programs written in JavaScript -->
+
+<!DOCTYPE html>
+<!-- 
+    • Tells Browser that this is a HTML File.
+    • Tells browser to switch to default mode.
+    • The first line in your HTML code should be the doctype declaration.
+      A doctype tells the browser what version of HTML the page is written in.
+    • If you forget to include this line of code in your file,
+      then some of the HTML 5 tags like <article>,
+      <footer>, and <header> may not be supported by the browser.
+-->
+
+<html lang="en">
+<!--
+    • The <html> tag is the top level element of the HTML file.
+      You will nest the<head> and <body> tags inside of it.
+    • The lang attribute inside the opening <html> tag sets the language for the page.
+      It is also good to include it for accessibility reasons,
+    because screen readers will know how to properly pronounce the text.
+-->
+
+<head>
+    <!--
+    • The <head> tags contain information that is processed by machines.
+      Inside the <head> tags, you will nest metadata which is data that describes the document to the machine.\
+    -->
+
+    <meta charset="UTF-8" />
+    <!--
+    • meta - Enpty Element • charset - character encodeing, tells browser.
+    • UTF-8 is the standard character encoding you should use in your web pages.\
+      This will usually be the first <meta> tag shown in the <head> element.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    • viewport meta tag: This tag renders the width of the page to the width of the device's screen size.
+      If you have a mobile device that is 600px wide, then the browser window will also be 600px wide.
+    • The initial-scale controls the zoom level.
+      The value of 1 for the initial-scale prevents the default zoom by browsers.
+    -->
+
+    <title>Document</title>
+    <!--
+    • The <title> tag is the title for the web page.
+      This text is shown in the browser's title bar.
+    -->
+
+    <link rel="stylesheet" href="style.css">
+    <!--
+    • This code will link your custom CSS to the HTML page.
+      rel="stylesheet" defines the relationship between the HTML file and the external stylesheet.
+    -->
+
+</head>
+
+<body>
+    <!--
+    • This contains all the content that you want to show to web users when they visit
+      your page, whether that's text, images, videos, games, playable audio tracks, or
+      whatever else.
+    -->
+
+    <script src="index.js"></script>
+    <!--
+    • External script tags will be placed just before the ending body tag. This is where
+      you can link your external JavaScript code.
+    -->
+
+</body>
+
+</html>

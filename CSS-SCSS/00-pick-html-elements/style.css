@@ -1,0 +1,51 @@
+/* ##################################################### */
+/* pick html tag/element directly: */
+/* ##################################################### */
+
+main {
+  color: green;
+}
+
+section {
+  color: blue;
+}
+
+div {
+  color: red;
+}
+
+/* ##################################################### */
+/* pick html tag/element via className: */
+/* ##################################################### */
+
+.className {
+  background-color: blue;
+}
+
+/* ##################################################### */
+/* pick html tag/element via id: */
+/* ##################################################### */
+
+#idName {
+  background-color: red;
+}
+
+/* ##################################################### */
+/* pick html nested or children tag/element: */
+/* ##################################################### */
+
+section div {
+  background-color: yellow;
+}
+
+.className div {
+  background-color: pink;
+}
+
+#idName div {
+  background-color: orange;
+}
+
+#idName .className {
+  background-color: green;
+}

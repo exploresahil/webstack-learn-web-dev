@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  /* by default flex-direction: row; */
+
+  justify-content: center;
+  /* works in the direction of flex-direction */
+
+  align-items: center;
+  /* works in the opposite direction of flex-direction */
+}
+
+.flex {
+  width: 400px;
+  height: 400px;
+  display: flex;
+
+  flex-wrap: wrap;
+  /* 
+  Wraps all elements in the flex container maintaining the width or height of the flex children.
+  */
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* if flex-wrap: wrap; then align-content: center helps to center all elements in the flex container  */
+}
+
+.flex .item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  flex: 2 4 50px;
+
+  /* 
+  flex: 2 4 50px;
+  means -->
+
+  flex-grow: 2;
+  flex-shrink: 4;
+  flex-basis: 50px;
+
+  */
+}
